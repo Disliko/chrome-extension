@@ -43,6 +43,20 @@ body {
   width: 50%;
 }
 
+.logo_area {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.logo {
+  height: 80px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+}
+
 :root {
   --txt-color: #eee;
   --bg-color: #333;
