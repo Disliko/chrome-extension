@@ -1,0 +1,49 @@
+@import url('./txt.css');
+@import url('./list.css');
+@import url('./cons.css');
+@import url('./line.css');
+@import url('./display.css');
+@import url('./hide.css');
+@import url('./animation.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body {
+  min-height: 500px;
+  min-width: 300px;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-size: 12px;
+}
+
+.full_page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: opaTo1 0.5s ease-in-out;
+}
+
+.youtube_like_area {
+  min-width: min(90%, 250px);
+}
+
+.youtube_likes_con {
+  width: 50%;
+}
+
+:root {
+  --txt-color: #eee;
+  --bg-color: #333;
+}

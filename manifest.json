@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "AJ-Youtube dislike",
+  "version": "1.0.0",
+  "description": "See Youtube dislike amount",
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Youtube dislike"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}

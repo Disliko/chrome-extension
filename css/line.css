@@ -1,0 +1,46 @@
+.line_y,
+.line_x,
+.youtube_rating_line,
+.youtube_like_rating,
+.youtube_dislike_rating {
+  border-radius: 2em;
+}
+
+.line_y {
+  background-color: #444;
+  width: 3px;
+  height: 100%;
+}
+
+.line_x {
+  background-color: #444;
+  height: 3px;
+}
+
+.youtube_rating_line {
+  background-color: var(--dislike-line-color);
+  height: 5px;
+  display: flex;
+}
+
+.youtube_like_rating,
+.youtube_dislike_rating {
+  height: 100%;
+}
+
+.youtube_like_rating {
+  background-color: var(--like-line-color);
+  width: var(--like-line-width);
+}
+
+.youtube_dislike_rating {
+  background-color: var(--dislike-line-color);
+  width: var(--dislike-line-width);
+}
+
+:root {
+  --like-line-color: #22931c;
+  --dislike-line-color: #871818;
+  --like-line-width: 50%;
+  --dislike-line-width: 50%;
+}

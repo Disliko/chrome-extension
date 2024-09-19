@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>AJ-YouTube dislike</title>
+  </head>
+  <body>
+    <div class="full_page not_in_youtube_page hide">
+      <div class="large_txt">You are not watching YouTube video</div>
+    </div>
+    <div class="full_page in_youtube_page hide list_y">
+      <div class="list_y_small youtube_like_area">
+        <div class="con_df_bg list_y_small">
+          <div class="d_f_ce list_x_small">
+            <span class="material-symbols-outlined"> visibility </span>
+            <b class="youtube_view_count"></b>
+          </div>
+          <div class="line_x"></div>
+          <div class="d_f_ai_ce list_x d_f_jc_sb">
+            <div class="d_f_ce youtube_likes_con list_x_small">
+              <span class="material-symbols-outlined"> thumb_up </span>
+              <b class="youtube_like_count"></b>
+            </div>
+            <div class="line_y"></div>
+            <div class="d_f_ce youtube_likes_con list_x_small">
+              <span class="material-symbols-outlined"> thumb_down </span>
+              <b class="youtube_dislike_count"></b>
+            </div>
+          </div>
+        </div>
+        <div class="youtube_rating_line">
+          <div class="youtube_like_rating"></div>
+          <div class="youtube_dislike_rating"></div>
+        </div>
+      </div>
+      <div class="d_f_ai_ce con_df_bg list_x_small">
+        <span>Rating</span>
+        <span class="youtube_rating_count"></span>
+      </div>
+    </div>
+    <div class="full_page loading_page">
+      <div class="large_txt">Loading</div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
