@@ -1,12 +1,10 @@
 import { calcPercent, formatNumber } from './formatter.js'
 
 export async function getVideoData(url) {
-  const urlParams = new URLSearchParams(new URL(url).search)
-  const videoId = urlParams.get('v')
-
+  const videoId = getVideoId(url)
   const apiUrl = `https://returnyoutubedislikeapi.com/votes?videoId=${videoId}`
 
-  return fetch(apiUrl, {
+  const data = await fetch(apiUrl, {
     method: 'GET',
     headers: {
       Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9',
@@ -21,6 +19,16 @@ export async function getVideoData(url) {
     })
     .then((data) => ({ ok: true, data }))
     .catch((err) => ({ ok: false, error: err }))
+
+  return data
+}
+
+function getVideoId(url) {
+  const videoId = url.includes('/shorts/')
+    ? url.split('/shorts/')[1].split('?')[0]
+    : new URLSearchParams(new URL(url).search).get('v')
+
+  return videoId
 }
 
 export function calcLikesPercent(like, dislike) {
