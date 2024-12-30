@@ -1,5 +1,9 @@
 export function isYouTubeURL(url) {
-  return url && url.startsWith('https://www.youtube.com/watch?v=')
+  return (
+    url &&
+    url.startsWith('https://www.youtube.com/') &&
+    (url.includes('watch?v=') || url.includes('shorts/'))
+  )
 }
 
 export function choosePage(isYouTube, pages) {

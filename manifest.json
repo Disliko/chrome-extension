@@ -5,6 +5,9 @@
   "description": "See Youtube dislike amount",
   "permissions": ["scripting", "tabs", "activeTab"],
   "host_permissions": ["<all_urls>"],
+  "background": {
+    "type": "module"
+  },
   "action": {
     "default_popup": "index.html",
     "default_title": "Youtube dislike"
