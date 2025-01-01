@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "AJ-Youtube dislike",
+  "name": "Disliko",
   "version": "1.0.0",
-  "description": "See Youtube dislike amount",
+  "description": "Bring the dislikes back to YouTube.",
   "permissions": ["scripting", "tabs", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "background": {
@@ -10,7 +10,7 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_title": "Youtube dislike"
+    "default_title": "Disliko"
   },
   "content_scripts": [
     {
