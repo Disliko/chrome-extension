@@ -3,7 +3,7 @@
   "name": "Disliko",
   "version": "1.0.0",
   "description": "Bring the dislikes back to YouTube.",
-  "permissions": ["scripting", "tabs", "activeTab"],
+  "permissions": ["tabs"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "type": "module"
